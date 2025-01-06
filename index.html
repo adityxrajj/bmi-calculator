@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1>BMI Calculator</h1>
+        <p class="instructions">Enter your weight (kg) and height (cm) to calculate your Body Mass Index (BMI).</p>
+        <form id="bmi-form">
+            <div class="input-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" required min="1" step="0.1" inputmode="decimal">
+            </div>
+            <div class="input-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" required min="1" step="0.1" inputmode="decimal">
+            </div>
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <div id="result" class="animate__animated animate__fadeInUp"></div>
+    </div>
+
+    <footer class="developer-info">
+        Created by <a href="https://github.com/adityxrajj">@adityxrajj</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
